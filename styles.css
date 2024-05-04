@@ -1,0 +1,86 @@
+.inline-elements h1,
+.inline-elements input,
+.inline-elements button {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px; /* Remove default margin */
+}
+body{
+    font-weight: bold;
+}
+
+h1{
+  color: rgb(219, 84, 35);
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid  rgb(219, 84, 35);
+}
+input[type="text"]::placeholder {
+    text-align: left;
+}
+button{
+    padding: 6px 30px;
+    color: white;
+    background-color:  rgb(219, 84, 35);
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    transition: background-color 0.25s;
+}
+.container {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 10px); /* Full width + 5px padding on each side */
+    height:calc(100% + 5px); /* Full height */
+    background-color: bisque; /* Background color */
+    z-index: -1; /* Place the background behind other elements */
+}
+
+.table-container {
+    display: flex; 
+    padding: 10px 5px;/* Use flexbox to horizontally align tables */
+}
+
+.box-table {
+    width: calc(25% - 10px); /* 25% width - 5px padding on each side */
+    margin-right: 10px;
+    background-color: bisque;  /* Add spacing between tables */
+}
+
+.box-table th,
+.box-table td {
+    padding: 8px;
+    text-align: center;
+}
+
+.box-header th {
+    border: 0.1px solid #000; /* Separate border for table header */
+    background-color:  rgb(219, 84, 35); /* Color a */
+}
+
+.box-row td {
+    border: 0.1px solid #000; /* Separate border for table rows */
+    background-color: #999999; /* Color b */
+}
+
+.box-cell {
+    padding: 8px;
+    text-align: center;
+    border: 0.1px solid #000;
+}
+
+.col1 {
+    border-right: 0.1px solid #000; /* Separate border for column 1 */
+}
+
+.col2 {
+    border-left: 0.1px solid #000; /* Separate border for column 2 */
+}
